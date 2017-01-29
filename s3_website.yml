@@ -16,3 +16,9 @@ index_document: index.html
 error_document: error.html
 cache_control: max-age=2628000, public
 gzip: true
+
+redirects:
+  about.html: /about/
+  services: /services/
+  projects.html: /projects/
+  contact.html: /contact/
