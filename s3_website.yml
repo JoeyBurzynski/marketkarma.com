@@ -19,6 +19,6 @@ gzip: true
 
 redirects:
   about.html: /about/
-  services: /services/
+  services.html: /services/
   projects.html: /projects/
   contact.html: /contact/
