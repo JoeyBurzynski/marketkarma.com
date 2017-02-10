@@ -1,0 +1,24 @@
+s3_id: <%= ENV['S3_ID'] %>
+s3_secret: <%= ENV['S3_SECRET'] %>
+s3_bucket: www.marketkar.ma
+cloudfront_distribution_id: E303WYPO39XUY7
+cloudfront_distribution_config:
+  default_cache_behavior:
+  aliases:
+    quantity: 2
+    items:
+      - marketkar.ma
+      - www.marketkar.ma
+cloudfront_invalidate_root: true
+cloudfront_wildcard_invalidation: true
+site: ../public
+index_document: index.html
+error_document: error.html
+cache_control: max-age=2628000, public
+gzip: true
+
+redirects:
+  about.html: /about/
+  services: /services/
+  projects.html: /projects/
+  contact.html: /contact/
