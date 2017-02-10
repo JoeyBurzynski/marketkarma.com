@@ -1,7 +1,7 @@
 s3_id: <%= ENV['S3_ID'] %>
 s3_secret: <%= ENV['S3_SECRET'] %>
 s3_bucket: www.marketkarma.com
-cloudfront_distribution_id: <%= ENV['CLOUDFRONT_ID'] %>
+cloudfront_distribution_id: E3NE9R63VD4QT
 cloudfront_distribution_config:
   default_cache_behavior:
   aliases:
