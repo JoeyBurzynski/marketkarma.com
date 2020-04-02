@@ -4,11 +4,13 @@ s3_bucket: www.marketkarma.com
 cloudfront_distribution_id: E3NE9R63VD4QT
 cloudfront_distribution_config:
   default_cache_behavior:
+    min_ttl: <%= 60 * 60 * 24 %>
   aliases:
     quantity: 2
     items:
       - marketkarma.com
       - www.marketkarma.com
+  http_version: http2
 cloudfront_invalidate_root: true
 cloudfront_wildcard_invalidation: true
 site: public
@@ -16,7 +18,7 @@ index_document: index.html
 error_document: error.html
 cache_control: max-age=2628000, public
 gzip: true
-
+ignore_on_server: _DELETE_NOTHING_ON_THE_S3_BUCKET_
 redirects:
   about.html: /about/
   services.html: /services/
