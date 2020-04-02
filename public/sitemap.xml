@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.marketkarma.com/</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
       <image:image>
         <image:loc>https://www.marketkarma.com/img/icons/icon-ubiquitous-2x-sb3ac80a2d0.png</image:loc>
@@ -20,6 +20,10 @@
         <image:loc>https://www.marketkarma.com/img/traffic.png</image:loc>
         <image:title>prove</image:title>
       </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/we-may-be-on-to-something.jpg</image:loc>
+        <image:title>http://instagram.com/p/e1_gUzIJxW/</image:title>
+      </image:image>
   </url>
   <url>
     <loc>https://www.marketkarma.com/projects/</loc>
@@ -35,53 +39,8 @@
       </image:image>
   </url>
   <url>
-    <loc>https://www.marketkarma.com/about/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://www.marketkarma.com/img/bio/joey-burzynski@2x.png</image:loc>
-        <image:title>Joey Burzynski - Founder/CIO</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.marketkarma.com/img/bio/michel-bio@2x.png</image:loc>
-        <image:title>Michel Bio - Creative Director</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.marketkarma.com/img/bio/crystalei-daniels@2x.png</image:loc>
-        <image:title>Crystalei Daniels - Developer</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.marketkarma.com/img/bio/joey-burzynski.png</image:loc>
-        <image:title></image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.marketkarma.com/img/bio/michel-bio.png</image:loc>
-        <image:title></image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.marketkarma.com/img/bio/crystalei-daniels.png</image:loc>
-        <image:title></image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.marketkarma.com/img/icons/icon-ubiquitous-2x-sb3ac80a2d0.png</image:loc>
-        <image:title></image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.marketkarma.com/img/icons/icon-interior-2x-s2f35e80ff1.png</image:loc>
-        <image:title></image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.marketkarma.com/img/headers/header-image-madProps-1600.jpg</image:loc>
-        <image:title></image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.marketkarma.com/img/headers/header-image-about-1600.jpg</image:loc>
-        <image:title></image:title>
-      </image:image>
-  </url>
-  <url>
     <loc>https://www.marketkarma.com/contact/</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.9</priority>
       <image:image>
         <image:loc>https://www.marketkarma.com/img/icons/icon-ubiquitous-2x-sb3ac80a2d0.png</image:loc>
@@ -93,6 +52,96 @@
       </image:image>
       <image:image>
         <image:loc>https://www.marketkarma.com/img/icons/icon-interior-2x-s2f35e80ff1.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://www.marketkarma.com/services/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/services/seo-experts@2x.png</image:loc>
+        <image:title>Search Engine Optimization (SEO)</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/services/pay-per-click@2x.png</image:loc>
+        <image:title>Pay Per Click (PPC)</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/services/social-media-marketing@2x.png</image:loc>
+        <image:title>Social Media Marketing</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/services/content-marketing@2x.png</image:loc>
+        <image:title>Content Marketing</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/services/seo-experts.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/services/pay-per-click.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/services/social-media-marketing.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/services/content-marketing.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/icons/icon-ubiquitous-2x-sb3ac80a2d0.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/headers/header-image-services-1600.jpg</image:loc>
+        <image:title></image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://www.marketkarma.com/about/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/bio/joey-burzynski@2x.png</image:loc>
+        <image:title>Joey Burzynski - Founder/CTO</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/bio/michel-bio@2x.png</image:loc>
+        <image:title>Michel Bio - Creative Director</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/bio/crystalei-daniels@2x.png</image:loc>
+        <image:title>Crystalei Daniels - Developer</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/icons/icon-ubiquitous-2x-sb3ac80a2d0.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/icons/icon-interior-2x-s2f35e80ff1.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/bio/crystalei-daniels.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/bio/michel-bio.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/headers/header-image-madProps-1600.jpg</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/bio/joey-burzynski.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.marketkarma.com/img/headers/header-image-about-1600.jpg</image:loc>
         <image:title></image:title>
       </image:image>
   </url>
