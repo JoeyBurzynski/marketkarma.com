@@ -3,26 +3,29 @@
       "@context": "http://schema.org",
       "@type": "Organization",
       "name": "MarketKarma",
-      "legalName": "MarketKar.ma LLC",
-      "logo": "https://www.marketkarma.com/img/logo/marketkarma-737x737.png",
-      "description": "We're a boutique digital agency in Miami Beach, Florida.  We've architected search marketing strategies for a number of Fortune 500 brands.",
+      "legalName": "MarketKarma LLC",
+      "logo": "https://www.marketkarma.com/shared/marketkarma-seo-agency-in-miami-beach.png",
+      "description": "MarketKarma is a digital marketing agency with a software development focus. We've architected strategies (SEO & e-commerce) for a number of global brands.",
       "url": "https://www.marketkarma.com/",
       "email": "hello@marketkarma.com",
-      "employees": [{
-        "@type": "Person",
-        "name": "Crystalei Daniels",
-        "email": "crystalei@marketkarma.com",
-        "gender": "female",
-        "image": "https://www.marketkarma.com/img/bio/crystalei-daniels.png",
-        "jobTitle": "Developer"
-      }, {
-        "@type": "Person",
-        "name": "Michel Bio",
-        "email": "michel@marketkarma.com",
-        "gender": "male",
-        "image": "https://www.marketkarma.com/img/bio/michel-bio.png",
-        "jobTitle": "Creative Director"
-      }],
+      "employees": [
+        {
+          "@type": "Person",
+          "name": "Crystalei Daniels",
+          "email": "crystalei@marketkarma.com",
+          "gender": "female",
+          "image": "https://www.marketkarma.com/img/bio/crystalei-daniels.png",
+          "jobTitle": "Developer"
+        },
+        {
+          "@type": "Person",
+          "name": "Michel Bio",
+          "email": "michel@marketkarma.com",
+          "gender": "male",
+          "image": "https://www.marketkarma.com/img/bio/michel-bio.png",
+          "jobTitle": "Creative Director"
+        }
+      ],
       "foundingDate": "2011",
       "foundingLocation": "Dallas, Texas",
       "founder": {
@@ -56,7 +59,11 @@
         "@type": "ContactPoint",
         "telephone": "+1 (888) 277-0225",
         "contactType": "customer service",
-        "areaServed": ["US", "CA", "GB"]
+        "areaServed": [
+          "US",
+          "CA",
+          "GB"
+        ]
       },
       "sameAs": [
         "https://github.com/MarketKarma",
@@ -67,16 +74,15 @@
         "https://www.crunchbase.com/organization/marketkarma"
       ]
     },
-
     {
       "@context": "http://www.schema.org",
       "@type": "LocalBusiness",
       "name": "MarketKarma",
       "branchOf": "MarketKarma",
       "url": "https://www.marketkarma.com",
-      "logo": "https://www.marketkarma.com/img/logo/marketkarma-737x737.png",
+      "logo": "https://www.marketkarma.com/shared/marketkarma-seo-agency-in-miami-beach.png",
       "image": "https://www.marketkarma.com/img/MarketKarma_StreetView.png",
-      "description": "We're a boutique digital agency in Miami Beach, Florida.  We've architected search marketing strategies for a number of Fortune 500 brands.",
+      "description": "MarketKarma is a digital marketing agency with a software development focus. We've architected strategies (SEO & e-commerce) for a number of global brands.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "400 Alton Road, TH-3A",
@@ -102,4 +108,4 @@
         "https://www.crunchbase.com/organization/marketkarma"
       ]
     }
-]
+  ]
