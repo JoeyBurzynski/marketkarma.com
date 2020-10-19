@@ -22,7 +22,7 @@ cache_control: max-age=2628000, public
 gzip: true
 ignore_on_server: _DELETE_NOTHING_ON_THE_S3_BUCKET_
 redirects:
-  index.html: https://www.marketkarma.com
+  # index.html: https://www.marketkarma.com
   about.html: /about/
   services.html: /services/
   projects.html: /projects/
