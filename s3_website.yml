@@ -2,6 +2,7 @@
 # s3_secret: <%= ENV['S3_SECRET'] %>
 profile: <%= ENV['AWS_PROFILE'] %>
 s3_bucket: www.marketkarma.com
+concurrency_level: 10
 cloudfront_distribution_id: E3NE9R63VD4QT
 cloudfront_distribution_config:
   default_cache_behavior:
@@ -21,6 +22,7 @@ cache_control: max-age=2628000, public
 gzip: true
 ignore_on_server: _DELETE_NOTHING_ON_THE_S3_BUCKET_
 redirects:
+  index.html: https://www.marketkarma.com
   about.html: /about/
   services.html: /services/
   projects.html: /projects/
