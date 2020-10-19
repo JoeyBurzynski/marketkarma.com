@@ -11,5 +11,8 @@
 /test/version_tmp/
 /tmp/
 
-# Used by dotenv library to load environment variables.
+# * Used by dotenv library to load environment variables.
 .env
+
+# * Miscellaneous
+.DS_STORE
