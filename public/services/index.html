@@ -179,7 +179,28 @@
 
     <!-- LogRocket -->
     <script src="https://cdn.lr-ingest.io/LogRocket.min.js" crossorigin="anonymous"></script>
-    <script>window.LogRocket && window.LogRocket.init('fxju4f/marketreach');</script>
+    <script>
+      window.LogRocket && window.LogRocket.init(
+        'fxju4f/marketreach', {
+          console: {
+            isEnabled: {
+              log: true,
+              debug: true
+            }
+          },
+          dom: {
+            isEnabled: true,
+          },
+          mergeIframes: true,
+          network: {
+            isEnabled: true,
+          },
+          rootHostname: 'marketkarma.com',
+          shouldCaptureIP: true,
+          shouldDebugLog: true
+        }
+      );
+    </script>
   </head>
 
   <body class="page page-id-11 page-parent page-template-default page-services">
