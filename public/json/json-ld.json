@@ -4,7 +4,7 @@
       "@type": "Organization",
       "name": "MarketKarma",
       "legalName": "MarketKarma LLC",
-      "logo": "https://www.marketkarma.com/shared/marketkarma-seo-agency-in-miami-beach.png",
+      "logo": "https://www.marketkarma.com/shared/MarketKarma-E-commerce-SEO.png",
       "description": "MarketKarma is a digital marketing agency with a software development focus. We've architected strategies (SEO & e-commerce) for a number of global brands.",
       "url": "https://www.marketkarma.com/",
       "email": "hello@marketkarma.com",
@@ -80,7 +80,7 @@
       "name": "MarketKarma",
       "branchOf": "MarketKarma",
       "url": "https://www.marketkarma.com",
-      "logo": "https://www.marketkarma.com/shared/marketkarma-seo-agency-in-miami-beach.png",
+      "logo": "https://www.marketkarma.com/shared/MarketKarma-E-commerce-SEO.png",
       "image": "https://www.marketkarma.com/img/MarketKarma_StreetView.png",
       "description": "MarketKarma is a digital marketing agency with a software development focus. We've architected strategies (SEO & e-commerce) for a number of global brands.",
       "address": {
@@ -96,7 +96,7 @@
         "latitude": "25.7729912",
         "longitude": "-80.1423647"
       },
-      "hasMap": "https://goo.gl/maps/xi7pGW7rzos",
+      "hasMap": "https://g.page/MarketKarma",
       "openingHours": "Mo, Tu, We, Th, Fr 06:00-18:00",
       "telephone": "+1 (888) 277-0225",
       "sameAs": [

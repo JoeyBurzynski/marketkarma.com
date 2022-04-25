@@ -2,7 +2,7 @@
 
 - URL: https://www.marketkarma.com
 - Sitemap (XML): https://www.marketkarma.com/sitemap.xml
-- Last Update: 2020-03-31 08:49:53
+- Last Update: 2022-04-25 08:49:53
 
 ## Usage
 
