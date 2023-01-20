@@ -85,6 +85,10 @@ package = "netlify-plugin-checklinks"
   # Many build tools don't emit working references, so this is disabled by default
   followSourceMaps = false
 
+[[plugins]]
+package = "netlify-plugin-image-optim"
+
+
 
 # Production context: all deploys from the Production branch
 # set in your site’s Branches settings in the UI will inherit
