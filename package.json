@@ -2,7 +2,12 @@
   "name": "marketkarma.com",
   "version": "1.0.0",
   "description": "MarketKarma.com",
+  "private": true,
   "main": "index.js",
+  "workspaces": [],
+  "engines": {
+   "node": "16.5.0"
+  },
   "scripts": {
     "netlify:deploy": "DEBUG=* netlify build",
     "netlify:deploy": "DEBUG=* netlify deploy",
