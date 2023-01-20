@@ -40,6 +40,14 @@
     preload'''
 
 
+[[redirects]]
+  from = "/schedule"
+  to = "https://calendarhero.to/SEO"
+  status = 200
+  force = false
+  headers = {X-From = "Netlify"}
+
+
 
 
 [[plugins]]
