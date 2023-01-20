@@ -1,0 +1,23 @@
+{
+  "name": "marketkarma.com",
+  "version": "1.0.0",
+  "description": "MarketKarma.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeyBurzynski/marketkarma.com.git"
+  },
+  "author": "Joey Burzynski <joey@marketkarma.com> (https://github.com/JoeyBurzynski)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoeyBurzynski/marketkarma.com/issues"
+  },
+  "homepage": "https://github.com/JoeyBurzynski/marketkarma.com#readme",
+  "devDependencies": {
+    "@netlify/plugin-lighthouse": "^4.0.5",
+    "netlify-plugin-image-optim": "^0.4.0"
+  }
+}
