@@ -209,6 +209,8 @@
 
   <body class="home page page-id-15 page-template-default page-home">
 
+    <script async src='/js/jquery.min.js'></script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZP65JZVFQS"></script>
     <script>
@@ -218,6 +220,13 @@
       gtag('config', 'G-ZP65JZVFQS');
     </script>
 
+    <script>
+      var imagePath = "/img/";
+    </script>
+    
+    <!--[if IE]><script src="/js/vendor/matchMedia.js" defer></script><![endif]-->
+    <script src="/js/50b98b1.js" defer></script>
+
     <div class=mobileMenu>
       <h2>Menu</h2>
       <ul>
@@ -226,6 +235,7 @@
         <li></li>
       </ul>
     </div>
+
     <!-- Site Navigation (Start) -->
     <nav role=navigation>
       <div class=navWrap>
@@ -381,34 +391,8 @@
       </footer>
       <!-- Footer (End) -->
     </div>
-    <script src="/js/vendor/modernizr-2.6.2.js" async defer></script>
-    <script src='/js/jquery.min.js' async defer></script>
-    <script>
-      var imagePath = "/img/";
-    </script>
-    <!--[if IE]><script type="text/javascript" src="/js/vendor/matchMedia.js"></script><![endif]-->
-    <script src="/js/50b98b1.js" async defer></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46766766-12"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', 'UA-46766766-12');
-    </script>
 
-    <script>
-      // Intercom
-      // window.intercomSettings = {
-      //  app_id: "ejisonq1"
-      // };
-    </script>
-
-    <script>
-    // Intercom
-    // (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ejisonq1';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-    </script>
   </body>
 
 </html>
