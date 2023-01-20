@@ -16,6 +16,7 @@
 
 # * Miscellaneous
 .DS_STORE
+.code-workspace
 
 # Local Netlify folder
 .netlify
