@@ -41,7 +41,7 @@ package = "netlify-plugin-subfont"
   # An array of glob patterns for pages on your site
   # Recursive traversal will start from these
   entryPoints = [
-    "**/*.html", "*.html"
+   "**/*.html", "*.html"
   ]
 
   # Follow your links across all pages to optimize the fonts across the entire site
@@ -53,7 +53,7 @@ package = "netlify-plugin-subfont"
 
   # Inline generated CSS @font-face blocks into each page
   # When set to `false` an external CSS file will be created
-  inlineCss = true
+  inlineCss = false
 
   # Inline generated font subsets into their respective @font-face blocks
   # When set to `false` external font files will be created

@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+  <meta charset='utf-8'>
+  <title>404: Rut roh.  No dice.</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,500,500i,700|Barriecito" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <style class="INLINE_PEN_STYLESHEET_ID">
+    :root {
+  --canvasColor: #f9f9f9;
+}
+
+body {
+  background: var(--canvasColor);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  --neutralShade0: #f8f8f8;
+  --neutralShade1: #f2f2f2;
+  --neutralShade2: #e8e9e9;
+  --neutralShade3: #d1d3d4;
+  --neutralShade4: #babdbf;
+  --neutralShade5: #808488;
+  --neutralShade6: #666a6d;
+  --neutralShade7: #4d5052;
+  --neutralShade8: #212122;
+  --grayColor: #999;
+  --lightGrayColor: #ddd;
+  --borderRadius: 6px;
+  --boxShadow: 0 2px 5px rgba(#333, 0.2);
+}
+
+/*overall layout*/
+main {
+  width: 100%;
+  min-height: 100vh;
+  color: var(--foregroundColor);
+  background: var(--backgroundColor);
+  text-align: left;
+  display: grid;
+  grid: repeat(4, 25%)/repeat(4, 25%);
+  overflow: hidden;
+}
+
+main section {
+  position: relative;
+}
+
+/*typography*/
+strong {
+  font-weight: 500;
+}
+
+em {
+  font-style: italic;
+}
+
+h1 {
+  font: 700 48px/1.2 "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font: 700 32px/1.2 "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font: 700 24px/1.2 "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font: 700 20px/1.2 "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font: 500 18px/1.2 "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+
+h6 {
+  font: 500 16px/1.2 "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+/*checkboxes*/
+input:disabled ~ * {
+  opacity: 0.3;
+  user-select: none;
+  pointer-events: none;
+}
+
+/*buttons & links*/
+a {
+  text-decoration: none;
+  color: var(--foregroundColor);
+}
+
+a.link {
+  display: inline;
+  border-bottom: 2px dashed;
+  font-weight: 500;
+  line-height: 2.5;
+  cursor: pointer;
+  color: var(--neutralShade5);
+}
+a.link:hover, a.link.hover {
+  color: var(--neutralShade6);
+  border-bottom: 2px solid;
+}
+a.link.primary {
+  color: var(--primaryColor);
+}
+a.link.primary:hover, a.link.primary.hover {
+  color: var(--primaryShade5);
+}
+a.link.secondary {
+  color: var(--secondaryColor);
+}
+a.link.secondary:hover, a.link.secondary.hover {
+  color: var(--secondaryShade5);
+}
+
+a.button,
+input.button,
+button {
+  outline: none;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  font: 500 16px/1 "Poppins", sans-serif;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: var(--borderRadius);
+  background: var(--primaryColor);
+  color: var(--backgroundColor);
+  position: relative;
+  top: 0;
+  transition: 0.2s ease;
+}
+a.button:hover, a.button.hover,
+input.button:hover,
+input.button.hover,
+button:hover,
+button.hover {
+  top: -3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+a.button:active, a.button.active,
+input.button:active,
+input.button.active,
+button:active,
+button.active {
+  background: var(--primaryShade4);
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  top: 0;
+}
+a.button.disabled,
+input.button.disabled,
+button.disabled {
+  opacity: 0.4;
+  user-select: none;
+  pointer-events: none;
+}
+a.button.medium,
+input.button.medium,
+button.medium {
+  padding: 15px 18px;
+  width: auto;
+}
+a.button.small,
+input.button.small,
+button.small {
+  padding: 10px 12px;
+  width: auto;
+  font-size: 14px;
+  font-weight: 500;
+}
+a.button.secondary,
+input.button.secondary,
+button.secondary {
+  background: var(--secondaryColor);
+}
+a.button.secondary:active, a.button.secondary:focus, a.button.secondary.active,
+input.button.secondary:active,
+input.button.secondary:focus,
+input.button.secondary.active,
+button.secondary:active,
+button.secondary:focus,
+button.secondary.active {
+  background: var(--secondaryShade4);
+  outline: none;
+}
+a.button.accent,
+input.button.accent,
+button.accent {
+  background: var(--accentColor);
+}
+a.button.accent:active, a.button.accent:focus, a.button.accent.active,
+input.button.accent:active,
+input.button.accent:focus,
+input.button.accent.active,
+button.accent:active,
+button.accent:focus,
+button.accent.active {
+  background: var(--accentShade4);
+}
+a.button.accent2,
+input.button.accent2,
+button.accent2 {
+  background: var(--accent2Color);
+}
+a.button.accent2:active, a.button.accent2:focus, a.button.accent2.active,
+input.button.accent2:active,
+input.button.accent2:focus,
+input.button.accent2.active,
+button.accent2:active,
+button.accent2:focus,
+button.accent2.active {
+  background: var(--accent2Shade4);
+}
+a.button.accent3,
+input.button.accent3,
+button.accent3 {
+  background: var(--accent3Color);
+}
+a.button.accent3:active, a.button.accent3:focus, a.button.accent3.active,
+input.button.accent3:active,
+input.button.accent3:focus,
+input.button.accent3.active,
+button.accent3:active,
+button.accent3:focus,
+button.accent3.active {
+  background: var(--accent3Shade4);
+}
+
+/*variations*/
+input.variation {
+  display: none;
+}
+input.variation + label {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 20px auto;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 6px solid #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.2);
+  justify-self: center;
+  position: relative;
+  z-index: 10;
+}
+
+#bluepurple + label {
+  background: linear-gradient(to left, #673ab7 50%, #03a9f4 50%);
+}
+#bluepurple:checked ~ main {
+  --backgroundColor: #fff;
+  --foregroundColor: #111;
+  --primaryColor: #03a9f4;
+  --primaryShade1: #e1f5fe;
+  --primaryShade2: #b3e5fc;
+  --primaryShade3: #4fc3f7;
+  --primaryShade4: #0288d1;
+  --primaryShade5: #0277bd;
+  --secondaryColor: #673ab7;
+  --secondaryShade1: #ede7f6;
+  --secondaryShade2: #d1c4e9;
+  --secondaryShade3: #9575cd;
+  --secondaryShade4: #512da8;
+  --secondaryShade5: #311b92;
+  --accentColor: #009688;
+  --accentShade1: #e0f2f1;
+  --accentShade2: #b2dfdb;
+  --accentShade3: #4db6ac;
+  --accentShade4: #00796b;
+  --accentShade5: #004d40;
+  --accent2Color: #8bc34a;
+  --accent2Shade1: #e7f6d5;
+  --accent2Shade2: #c5e1a5;
+  --accent2Shade3: #aed581;
+  --accent2Shade4: #689f38;
+  --accent2Shade5: #558b2f;
+  --accent3Color: #f44336;
+  --accent3Shade1: #ffdde0;
+  --accent3Shade2: #ffcdd2;
+  --accent3Shade3: #ef9a9a;
+  --accent3Shade4: #d32f2f;
+  --accent3Shade5: #b71c1c;
+}
+
+#sunset + label {
+  background: linear-gradient(to right, #ff9557 50%, #ffcc67 50%);
+}
+#sunset:checked ~ main {
+  --canvasColor: #f9f9f9;
+  --backgroundColor: #fff;
+  --foregroundColor: #111;
+  --primaryColor: #ff9557;
+  --primaryShade1: #ffe2d1;
+  --primaryShade2: #ffceb2;
+  --primaryShade3: #ffb184;
+  --primaryShade4: #e88850;
+  --primaryShade5: #d17a48;
+  --secondaryColor: #ffcc67;
+  --secondaryShade1: #fff1d5;
+  --secondaryShade2: #ffde9e;
+  --secondaryShade3: #ffd074;
+  --secondaryShade4: #e8ba5e;
+  --secondaryShade5: #ba954b;
+  --accentColor: #4e5166;
+  --accentShade1: #cecfd5;
+  --accentShade2: #aeafb9;
+  --accentShade3: #8e909d;
+  --accentShade4: #6e7081;
+  --accentShade5: #404354;
+  --accent2Color: #588b8b;
+  --accent2Shade1: #c2d4d4;
+  --accent2Shade2: #a3bfbf;
+  --accent2Shade3: #85aaaa;
+  --accent2Shade4: #507f7f;
+  --accent2Shade5: #497272;
+  --accent3Color: #fe5f55;
+  --accent3Shade1: #fec4c1;
+  --accent3Shade2: #fea7a2;
+  --accent3Shade3: #fe7c73;
+  --accent3Shade4: #e7574e;
+  --accent3Shade5: #b9463e;
+}
+
+#godiva + label {
+  background: linear-gradient(to right, #a05793 50%, #a3d858 50%);
+}
+#godiva:checked ~ main {
+  --canvasColor: #f9f9f9;
+  --backgroundColor: #fff;
+  --foregroundColor: #111;
+  --primaryColor: #a05793;
+  --primaryShade1: #e5d1e1;
+  --primaryShade2: #d3b2cd;
+  --primaryShade3: #b984b0;
+  --primaryShade4: #925086;
+  --primaryShade5: #834879;
+  --secondaryColor: #a3d858;
+  --secondaryShade1: #e5f4d1;
+  --secondaryShade2: #cce9a3;
+  --secondaryShade3: #bce285;
+  --secondaryShade4: #95c550;
+  --secondaryShade5: #779e41;
+  --accentColor: #245e71;
+  --accentShade1: #d7e1e5;
+  --accentShade2: #afc4cb;
+  --accentShade3: #7398a4;
+  --accentShade4: #4b7b8a;
+  --accentShade5: #1e4d5d;
+  --accent2Color: #2aa5a1;
+  --accent2Shade1: #d8eeed;
+  --accent2Shade2: #9ed6d4;
+  --accent2Shade3: #64bdba;
+  --accent2Shade4: #279693;
+  --accent2Shade5: #1f7976;
+  --accent3Color: #92374d;
+  --accent3Shade1: #ebdad3;
+  --accent3Shade2: #cda4ae;
+  --accent3Shade3: #af6d7d;
+  --accent3Shade4: #853246;
+  --accent3Shade5: #6b2939;
+}
+
+#dark + label {
+  background: linear-gradient(to right, #367bc3 50%, #38bfa7 50%);
+}
+#dark:checked ~ main {
+  --canvasColor: #2a313b;
+  --backgroundColor: #2a313b;
+  --foregroundColor: #ebe8d8;
+  --primaryColor: #367bc3;
+  --primaryShade5: #b5cfe9;
+  --primaryShade4: #91b7de;
+  --primaryShade3: #5a93cd;
+  --primaryShade2: #3270b2;
+  --primaryShade1: #285a8e;
+  --secondaryColor: #38bfa7;
+  --secondaryShade5: #c8ede7;
+  --secondaryShade4: #92dccf;
+  --secondaryShade3: #6ed0be;
+  --secondaryShade2: #33ae98;
+  --secondaryShade1: #2e9d89;
+  --accentColor: #586994;
+  --accentShade5: #d1d6e1;
+  --accentShade4: #a3adc4;
+  --accentShade3: #7684a7;
+  --accentShade2: #49567a;
+  --accentShade1: #39435f;
+  --accent2Color: #8fe1a2;
+  --accent2Shade5: #d6f4dd;
+  --accent2Shade4: #c1eecc;
+  --accent2Shade3: #a3e6b2;
+  --accent2Shade2: #82cd94;
+  --accent2Shade1: #76b985;
+  --accent3Color: #fe938c;
+  --accent3Shade5: #fee1df;
+  --accent3Shade4: #fec4c0;
+  --accent3Shade3: #fea6a0;
+  --accent3Shade2: #e78680;
+  --accent3Shade1: #b96b66;
+  color: #f1f2eb;
+  border-color: #f1f2eb;
+}
+#dark:checked ~ main > section {
+  border-color: #f1f2eb;
+}
+#dark:checked ~ main > section > h6 {
+  color: #f1f2eb;
+}
+
+#pinkaru + label {
+  background: linear-gradient(to right, #f95794 50%, #323da5 50%);
+}
+#pinkaru:checked ~ main {
+  border-color: #fff;
+  --canvasColor: #2a313b;
+  --backgroundColor: #2a313b;
+  --foregroundColor: #e3f2fd;
+  --primaryColor: #f95794;
+  --primaryShade5: #fdd1e1;
+  --primaryShade4: #fba3c4;
+  --primaryShade3: #fa75a7;
+  --primaryShade2: #e35087;
+  --primaryShade1: #b6406c;
+  --secondaryColor: #323da5;
+  --secondaryShade5: #c7cae6;
+  --secondaryShade4: #8f95cd;
+  --secondaryShade3: #6971bd;
+  --secondaryShade2: #2e3896;
+  --secondaryShade1: #293288;
+  --accentColor: #ffc729;
+  --accentShade5: #ffefc4;
+  --accentShade4: #ffe08a;
+  --accentShade3: #ffd14f;
+  --accentShade2: #e8b526;
+  --accentShade1: #d1a322;
+  --accent2Color: #53dd6c;
+  --accent2Shade5: #d0f5d6;
+  --accent2Shade4: #a1ecae;
+  --accent2Shade3: #72e386;
+  --accent2Shade2: #4cc963;
+  --accent2Shade1: #3da14f;
+  --accent3Color: #f52f57;
+  --accent3Shade5: #fcc6d1;
+  --accent3Shade4: #f98da3;
+  --accent3Shade3: #f65475;
+  --accent3Shade2: #df2b50;
+  --accent3Shade1: #b32340;
+}
+#pinkaru:checked ~ main > section {
+  border-color: #fff;
+}
+#pinkaru:checked ~ main > section > h6 {
+  color: #fff;
+}
+
+body {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(5, 70px) 1fr;
+  grid-template-rows: auto min-content;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+body main {
+  grid-row: 1;
+  grid-column: 1/-1;
+}
+
+.page-404 {
+  grid-column: 1/-1;
+  grid-row: 1/5;
+  text-align: center;
+  background: var(--canvasColor);
+  position: relative;
+}
+.page-404 h1 {
+  font-size: 8em;
+  color: var(--foregroundColor);
+  margin: 40px 0 -40px;
+}
+.page-404 img {
+  width: 100%;
+  height: 50%;
+  margin: 5em auto 3em;
+  max-width: 40em;
+  object-fit: contain;
+}
+.page-404 h3 {
+  position: relative;
+  z-index: 5;
+}
+.page-404 a.button {
+  max-width: 20em;
+  display: block;
+  margin: 1em auto;
+  position: relative;
+  z-index: 20;
+}
+
+.dog-faces {
+  position: relative;
+}
+.dog-faces img {
+  position: absolute;
+  max-width: 300px;
+  max-height: 250px;
+  z-index: 10;
+  opacity: 0;
+  transition: 0.2s ease;
+}
+.dog-faces img.left {
+  left: 20px;
+  opacity: 1;
+}
+.dog-faces img.right {
+  right: 20px;
+  opacity: 1;
+}
+.dog-faces img.top {
+  top: -20px;
+  opacity: 1;
+}
+.dog-faces img.bottom {
+  bottom: -20px;
+  opacity: 1;
+}
+.dog-faces img.rotate1 {
+  transform: rotate(35deg);
+}
+.dog-faces img.rotate2 {
+  transform: rotate(85deg);
+}
+.dog-faces img.rotate3 {
+  transform: rotate(125deg);
+}
+.dog-faces img.rotate4 {
+  transform: rotate(170deg);
+}
+.dog-faces img.rotate5 {
+  transform: rotate(260deg);
+}
+.dog-faces img.rotate6 {
+  transform: rotate(-15deg);
+}
+.dog-faces img.rotate7 {
+  transform: rotate(-69deg);
+}
+.dog-faces img.rotate8 {
+  transform: rotate(-105deg);
+}
+.dog-faces img.rotate9 {
+  transform: rotate(-145deg);
+}
+.dog-faces img.rotate10 {
+  transform: rotate(-195deg);
+}
+.dog-faces img.rotate11 {
+  transform: rotate(-215deg);
+}
+.dog-faces img.rotate12 {
+  transform: rotate(158deg);
+}
+.dog-faces img.rotate13 {
+  transform: rotate(0);
+}
+.dog-faces img.rotate14 {
+  transform: scaleX(-1);
+}
+.dog-faces:nth-of-type(4n+1) {
+  grid-column: 1;
+}
+.dog-faces:nth-of-type(4n+2) {
+  grid-column: 2;
+}
+.dog-faces:nth-of-type(4n+3) {
+  grid-column: 3;
+}
+.dog-faces:nth-of-type(4n+4) {
+  grid-column: 4;
+}
+.dog-faces:nth-of-type(-n+4) {
+  grid-row: 1;
+}
+.dog-faces:nth-of-type(n+5) {
+  grid-row: 2;
+}
+.dog-faces:nth-of-type(n+9) {
+  grid-row: 3;
+}
+.dog-faces:nth-of-type(n+13) {
+  grid-row: 4;
+}
+
+@media (min-width: 768px) {
+  .page-404 h1 {
+    position: absolute;
+    left: 50%;
+    margin: auto auto auto -2.5em;
+    top: 18%;
+    z-index: 3;
+  }
+}
+#dark:checked ~ main a.button, #pinkaru:checked ~ main a.button {
+  color: var(--foregroundColor);
+}
+#dark:checked ~ main a.link, #pinkaru:checked ~ main a.link {
+  color: var(--neutralShade3);
+  border-color: var(--neutralShade3);
+}
+
+footer {
+  display: grid;
+  grid: min-content/1fr max-content;
+  text-align: left;
+  align-items: center;
+  border-left: 0.5px solid #ccc;
+  padding: 10px 10px 10px 25px;
+  margin-left: 20px;
+  position: relative;
+  z-index: 10;
+  line-height: 1.8;
+}
+footer a {
+  text-decoration: none;
+  color: #333;
+  padding: 3px 0;
+  border-bottom: 1px dashed;
+}
+footer a:hover {
+  border-bottom: 1px solid;
+}
+footer .social a {
+  text-decoration: none;
+  margin-left: 10px;
+}
+footer .social a .icons {
+  display: inline-block;
+  font-size: 20px;
+}
+footer.dark, footer.dark a {
+  color: #f9f9f9;
+}
+  </style>
+</head>
+
+<body>
+  
+  <input class="variation" id="bluepurple" type="radio" value="1" name="color" checked="checked"/>
+  <label for="bluepurple"></label>
+  <input class="variation" id="sunset" type="radio" value="2" name="color"/>
+  <label for="sunset"></label>
+  <input class="variation" id="godiva" type="radio" value="3" name="color"/>
+  <label for="godiva"></label>
+  <input class="variation" id="dark" type="radio" value="4" name="color"/>
+  <label for="dark"></label>
+  <input class="variation" id="pinkaru" type="radio" value="5" name="color"/>
+  <label for="pinkaru"></label>
+  <main>
+    <section class="page-404"> 
+      <h1>404</h1><img src="https://www.marketkarma.com/img/404/adorable-dog.png" alt="Rut roh.  Page not found.  How about an adorable dog instead?"/>
+      <h3>
+         Rut roh.  Page not found <br/><a class="link js-dograin">Click here</a> for a pleasant surprise or...</h3><a class="button primary" href="https://www.marketkarma.com">Go back to the home page</a>
+    </section>
+    <div class="dog-faces"></div>
+    <div class="dog-faces"></div>
+    <div class="dog-faces"></div>
+    <div class="dog-faces"></div>
+    <div class="dog-faces"></div>
+    <div class="dog-faces"></div>
+    <div class="dog-faces"></div>
+    <div class="dog-faces"></div>
+    <div class="dog-faces"></div>
+    <div class="dog-faces"></div>
+    <div class="dog-faces"></div>
+    <div class="dog-faces"></div>
+    <div class="dog-faces"></div>
+    <div class="dog-faces"></div>
+    <div class="dog-faces"></div>
+    <div class="dog-faces"></div>
+  </main>
+  <footer>
+  </footer>
+  <script>
+    window.makeItRain = function () {
+      // Appearance
+      $("input.variation").on("click", function () {
+	if ($(this).val() > 3) {
+	  $("body").css("background", "#111");
+	  $("footer").attr("class", "dark");
+	} else {
+	  $("body").css("background", "#f9f9f9");
+	  $("footer").attr("class", "");
+	}
+      });
+
+      $(".js-dograin").on("click", function () {
+	startDog();
+	setTimeout(startDog, 600);
+	setTimeout(startDog, 1200);
+	setTimeout(startDog, 1800);
+	setTimeout(startDog, 2400);
+	setTimeout(startDog, 3000);
+	setTimeout(startDog, 3600);
+	setTimeout(startDog, 4200);
+	setTimeout(startDog, 4800);
+     });
+    }
+
+     function startDog() {
+	$(".dog-faces").each(function () {
+	var dog = generateDog();
+	var item = $(this);
+	var position = ["left", "right", "top", "bottom"];
+	var rotationNumber = Math.floor(Math.random() * 14) + 1;
+	$(item).append(
+  	  '<img src="' +
+		dog +
+		'" alt="Image of Dog" class="' +
+		"rotate" +
+		rotationNumber +
+		'"/>'
+		);
+	setTimeout(function () {
+  	  $(".dog-faces img:not(.left,.right,.top,.bottom)").each(function () {
+	  $(this).addClass(position[~~(Math.random() * position.length)]);
+	});
+      }, 100);
+    });
+   }
+
+    function generateDog() {
+      var number = Math.floor(Math.random() * 24) + 1;
+      var url = "https://www.marketkarma.com/img/404/dog" + number + ".png";
+      return url;
+    }
+   
+  </script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" onload="window.makeItRain()"></script>
+ 
+  </body>
+</html>
