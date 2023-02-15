@@ -1,6 +1,223 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:base",
+    ":pinAllExceptPeerDependencies",
+    "group:nodeJs",
+    "group:allApollographql",
+    "group:codemirror",
+    "group:fortawesome",
+    "group:fusionjs",
+    "group:glimmer",
+    "group:goOpenapi",
+    "group:hibernateCore",
+    "group:hibernateValidator",
+    "group:hibernateOgm",
+    "group:hibernateCommons",
+    "group:illuminate",
+    "group:jekyllEcosystem",
+    "group:jestPlusTSJest",
+    "group:jestPlusTypes",
+    "group:kubernetes",
+    "group:polymer",
+    "group:resilience4j",
+    "group:rubyOmniauth",
+    "group:socketio",
+    "group:springAmqp",
+    "group:springAndroid",
+    "group:springBatch",
+    "group:springBoot",
+    "group:springCloud",
+    "group:springCore",
+    "group:springData",
+    "group:springHateoas",
+    "group:springIntegration",
+    "group:springKafka",
+    "group:springLdap",
+    "group:springMobile",
+    "group:springOsgi",
+    "group:springRestDocs",
+    "group:springRoo",
+    "group:springScala",
+    "group:springSecurity",
+    "group:springSession",
+    "group:springShell",
+    "group:springSocial",
+    "group:springStatemachine",
+    "group:springWebflow",
+    "group:springWs",
+    "group:symfony"
+  ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**",
+    "**/examples/**",
+    "**/__tests__/**",
+    "**/test/**",
+    "**/tests/**",
+    "**/__fixtures__/**"
+  ],
+  "rangeStrategy": "auto",
+  "separateMajorMinor": true,
+  "separateMultipleMajor": true,
+  "branchPrefix": "renovate/",
+  "rebaseWhen": "behind-base-branch",
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 0,
+  "automerge": false,
+  "npm": {
+    "enabled": true,
+    "stabilityDays": 3
+  },
+  "ignoreUnstable": true,
+  "labels": [
+    "renovate",
+    "maintenance",
+    "dependencies"
+  ],
+  "commitBodyTable": true,
+  "lockFileMaintenance": {
+    "automerge": true
+  },
+  "prBodyColumns": [
+    "Package",
+    "Update",
+    "Type",
+    "New value",
+    "Package file",
+    "References"
+  ],
+  "prBodyNotes": [
+    "{{#if isMajor}}:warning: MAJOR MAJOR MAJOR :warning:{{/if}}"
+  ],
+  "dependencyDashboardAutoclose": true,
+  "dependencyDashboardTitle": "Renovate Dependency Dashboard",
+  "dependencyDashboardLabels": [
+    "renovate",
+    "dependencies"
+  ],
+  "packageRules": [
+    {
+      "extends": "packages:apollographql",
+      "groupName": "Apollo GraphQL packages"
+    },
+    {
+      "matchPackagePatterns": [
+        "apollo"
+      ],
+      "labels": [
+        "linting",
+        "graphql",
+        "maintenance",
+        "dependencies"
+      ]
+    },
+    {
+      "matchPackagePatterns": [
+        "eslint"
+      ],
+      "labels": [
+        "linting",
+        "eslint",
+        "maintenance",
+        "dependencies",
+        "renovate"
+      ]
+    },
+    {
+      "matchPackageNames": [
+        "@types/react"
+      ],
+      "matchPackagePrefixes": [
+        "react"
+      ],
+      "labels": [
+        "react",
+        "maintenance",
+        "dependencies"
+      ]
+    },
+    {
+      "matchPackagePrefixes": [
+        "stylelint"
+      ],
+      "labels": [
+        "linting",
+        "stylelint",
+        "maintenance",
+        "dependencies"
+      ]
+    },
+    {
+      "matchPackageNames": [
+        "codelyzer"
+      ],
+      "matchPackagePatterns": [
+        "\\btslint\\b"
+      ],
+      "labels": [
+        "linting",
+        "tslint",
+        "maintenance",
+        "dependencies"
+      ]
+    },
+    {
+      "matchPackageNames": [
+        "postcss"
+      ],
+      "matchPackagePrefixes": [
+        "postcss-"
+      ],
+      "labels": [
+        "linting",
+        "postcss",
+        "maintenance",
+        "dependencies"
+      ]
+    },
+    {
+      "matchSourceUrlPrefixes": [
+        "https://github.com/apollographql/"
+      ],
+      "labels": [
+        "graphql",
+        "maintenance",
+        "dependencies"
+      ]
+    },
+    {
+      "matchSourceUrlPrefixes": [
+        "*"
+      ],
+      "labels": [
+        "renovate",
+        "maintenance",
+        "dependencies"
+      ]
+    },
+    {
+      "matchPackagePatterns": [
+        "^eslint"
+      ],
+      "groupName": "eslint packages"
+    },
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "labels": [
+        "UPDATE-MAJOR"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "automerge": true
+    }
   ]
 }
