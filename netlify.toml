@@ -48,9 +48,30 @@
   headers = {X-From = "Netlify"}
 
 [[redirects]]
-  from = "/sample-redirect"
-  to = "https://calendarhero.to/SEO"
+  from = "/sample-301"
+  to = "/"
   status = 301
+  force = false
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/sample-302"
+  to = "/"
+  status = 302
+  force = false
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/sample-303"
+  to = "/"
+  status = 303
+  force = false
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/sample-307"
+  to = "/"
+  status = 307
   force = false
   headers = {X-From = "Netlify"}
 
