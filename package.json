@@ -25,7 +25,7 @@
   "homepage": "https://github.com/JoeyBurzynski/marketkarma.com#readme",
   "devDependencies": {
     "@netlify/plugin-lighthouse": "^4.0.5",
-    "netlify-cli": "^12.7.2",
+    "netlify-cli": "^12.14.0",
     "netlify-plugin-image-optim": "^0.4.0",
     "netlify-plugin-inline-source": "^1.0.4",
     "netlify-plugin-minify-html": "^0.3.1",
