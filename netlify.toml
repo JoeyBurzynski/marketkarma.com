@@ -47,6 +47,12 @@
   force = false
   headers = {X-From = "Netlify"}
 
+[[redirects]]
+  from = "/sample-redirect"
+  to = "https://calendarhero.to/SEO"
+  status = 301
+  force = false
+  headers = {X-From = "Netlify"}
 
 
 
@@ -175,7 +181,7 @@ package = "netlify-plugin-image-optim"
   compress = false
 
 # Here is an example of how to define context-specific
-# environment variables. To avoid committing sensitive 
+# environment variables. To avoid committing sensitive
 # values to public source repositories, set variables
 # with the Netlify UI, CLI, or API instead.
 # [context.deploy-preview.environment]
@@ -189,10 +195,10 @@ package = "netlify-plugin-image-optim"
 # [context.branch-deploy.environment]
 #  NODE_ENV = "development"
 
-# Dev context: environment variables set here 
-# are available for local development environments 
-# run using Netlify Dev. These values can be 
-# overwritten on branches that have a more specific 
+# Dev context: environment variables set here
+# are available for local development environments
+# run using Netlify Dev. These values can be
+# overwritten on branches that have a more specific
 # branch context configured.
 # [context.dev.environment]
 #   NODE_ENV = "development"
@@ -293,9 +299,9 @@ package = "netlify-plugin-image-optim"
   # a base hasn’t been set.
   directory = "functions/"
 
-# Use [dev] to set configuration overrides for local 
-# development environments run using Netlify Dev - except 
-# for environment variables. Environment variables for Netlify 
+# Use [dev] to set configuration overrides for local
+# development environments run using Netlify Dev - except
+# for environment variables. Environment variables for Netlify
 # Dev should be set under [context.dev.environment] instead.
 # [dev]
 #  command = "yarn start"
