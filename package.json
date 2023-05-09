@@ -6,7 +6,7 @@
   "main": "index.js",
   "workspaces": [],
   "engines": {
-   "node": "16.5.0"
+    "node": "16.5.0"
   },
   "scripts": {
     "netlify:deploy": "DEBUG=* netlify build",
@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/JoeyBurzynski/marketkarma.com#readme",
   "devDependencies": {
-    "@netlify/plugin-lighthouse": "^4.0.5",
-    "netlify-cli": "^12.7.2",
+    "@netlify/plugin-lighthouse": "^4.0.7",
+    "netlify-cli": "^13.2.1",
     "netlify-plugin-image-optim": "^0.4.0",
     "netlify-plugin-inline-source": "^1.0.4",
     "netlify-plugin-minify-html": "^0.3.1",
