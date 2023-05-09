@@ -77,34 +77,34 @@
 
 
 
-[[plugins]]
-package = "netlify-plugin-subfont"
+# [[plugins]]
+# package = "netlify-plugin-subfont"
 
-  [plugins.inputs]
-  # An array of glob patterns for pages on your site
-  # Recursive traversal will start from these
-  entryPoints = [
-   "**/*.html", "*.html"
-  ]
+#   [plugins.inputs]
+#   # An array of glob patterns for pages on your site
+#   # Recursive traversal will start from these
+#   entryPoints = [
+#    "**/*.html", "*.html"
+#   ]
 
-  # Follow your links across all pages to optimize the fonts across the entire site
-  recursive = true
+#   # Follow your links across all pages to optimize the fonts across the entire site
+#   recursive = true
 
-  # Subfont lets you set CSS font-display value of the optimized subsets
-  # See https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display
-  fontDisplay = "swap"
+#   # Subfont lets you set CSS font-display value of the optimized subsets
+#   # See https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display
+#   fontDisplay = "swap"
 
-  # Inline generated CSS @font-face blocks into each page
-  # When set to `false` an external CSS file will be created
-  inlineCss = false
+#   # Inline generated CSS @font-face blocks into each page
+#   # When set to `false` an external CSS file will be created
+#   inlineCss = false
 
-  # Inline generated font subsets into their respective @font-face blocks
-  # When set to `false` external font files will be created
-  inlineFonts = false
+#   # Inline generated font subsets into their respective @font-face blocks
+#   # When set to `false` external font files will be created
+#   inlineFonts = false
 
-  # Include fallbacks so the original font will be loaded when dynamic content gets injected at runtime
-  # When set to `false` external font files will be created
-  fallbacks = false
+#   # Include fallbacks so the original font will be loaded when dynamic content gets injected at runtime
+#   # When set to `false` external font files will be created
+#   fallbacks = false
 
 
 
@@ -112,65 +112,65 @@ package = "netlify-plugin-subfont"
 package = "netlify-plugin-image-optim"
 
 
-[[plugins]]
-  package = "netlify-plugin-inline-source"
+# [[plugins]]
+#   package = "netlify-plugin-inline-source"
 
-  # All inputs are optional, so you can omit this section.
-  # Defaults are shown below.
-  # You can also refer to the `inline-source` documentation: https://github.com/popeindustries/inline-source#usage.
-  [plugins.inputs]
-    # Attribute used to parse sources. All tags will be parsed if set to `false`.
-    attribute = "inline"
+#   # All inputs are optional, so you can omit this section.
+#   # Defaults are shown below.
+#   # You can also refer to the `inline-source` documentation: https://github.com/popeindustries/inline-source#usage.
+#   [plugins.inputs]
+#     # Attribute used to parse sources. All tags will be parsed if set to `false`.
+#     attribute = "inline"
 
-    # Enable/disable compression of inlined content.
-    compress = true
+#     # Enable/disable compression of inlined content.
+#     compress = true
 
-    # Maintain leading whitespace when `compress` is `false`.
-    pretty = false
+#     # Maintain leading whitespace when `compress` is `false`.
+#     pretty = false
 
-    # Disable inlining based on tag, type, and/or format.
-    ignore = []
+#     # Disable inlining based on tag, type, and/or format.
+#     ignore = []
 
-    # Convert `<img inline src="*.svg" />` to `<img>` and not `<svg>`.
-    svgAsImage = false
+#     # Convert `<img inline src="*.svg" />` to `<img>` and not `<svg>`.
+#     svgAsImage = false
 
 
 # Config for the Netlify Build Plugin: netlify-plugin-minify-html
-[[plugins]]
-  package = "netlify-plugin-minify-html"
+# [[plugins]]
+#   package = "netlify-plugin-minify-html"
 
-  # Specify which deploy contexts we'll minify HTML in.
-  # Supports any Deploy Contexts available in Netlify.
-  # https://docs.netlify.com/site-deploys/overview/#deploy-contexts
-  [plugins.inputs]
-    contexts = [
-      'production',
-      'branch-deploy',
-      'deploy-preview'
-    ]
+#   # Specify which deploy contexts we'll minify HTML in.
+#   # Supports any Deploy Contexts available in Netlify.
+#   # https://docs.netlify.com/site-deploys/overview/#deploy-contexts
+#   [plugins.inputs]
+#     contexts = [
+#       'production',
+#       'branch-deploy',
+#       'deploy-preview'
+#     ]
 
-  # Optionally, override the default options for the minification
-  # https://github.com/kangax/html-minifier#options-quick-reference
-  [plugins.inputs.minifierOptions]
-    removeComments = false
-    collapseInlineTagWhitespace = false
+#   # Optionally, override the default options for the minification
+#   # https://github.com/kangax/html-minifier#options-quick-reference
+#   [plugins.inputs.minifierOptions]
+#     removeComments = false
+#     collapseInlineTagWhitespace = false
 
 
-[[plugins]]
-  # Installs the Lighthouse Build Plugin for all deploy contexts
-  package = "@netlify/plugin-lighthouse"
+# [[plugins]]
+#   # Installs the Lighthouse Build Plugin for all deploy contexts
+#   package = "@netlify/plugin-lighthouse"
 
-  # optional, fails build when a category is below a threshold
-  # [plugins.inputs.thresholds]
-  #   performance = 0.9
-  #   accessibility = 0.9
-  #   best-practices = 0.9
-  #   seo = 0.9
-  #   pwa = 0.9
+#   # optional, fails build when a category is below a threshold
+#   # [plugins.inputs.thresholds]
+#   #   performance = 0.9
+#   #   accessibility = 0.9
+#   #   best-practices = 0.9
+#   #   seo = 0.9
+#   #   pwa = 0.9
 
-  # optional, deploy the lighthouse report to a path under your site
-  [plugins.inputs]
-    output_path = "public/reports/lighthouse.html"
+#   # optional, deploy the lighthouse report to a path under your site
+#   [plugins.inputs]
+#     output_path = "public/reports/lighthouse.html"
 
 
 
