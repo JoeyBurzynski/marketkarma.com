@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  --text-color: hsl(0 95% 60%);
+  --bg-color: hsl(0 0% 100%);
+  --bg-size: 200px;
+
+  display: grid;
+  place-items: center;
+  place-content: center;
+  grid-template-areas: "body";
+  overflow: hidden;
+  font-family: "Dela Gothic One", sans-serif;
+  background-color: var(--bg-color);
+}
+
+body::before {
+  --size: 150vmax;
+
+  grid-area: body;
+  content: "";
+  inline-size: var(--size);
+  block-size: var(--size);
+  background-image: url("https://share.marketkarma.com/mavis.svg");
+  background-size: var(--bg-size);
+  background-repeat: repeat;
+  transform: rotate(45deg);
+  opacity: 0.25;
+  animation: bg 6s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before {
+    animation-duration: 0s;
+  }
+}
+
+@keyframes bg {
+  to {
+    background-position: 0 calc(var(--bg-size) * -1);
+  }
+}
+
+.text {
+  grid-area: body;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(1rem, 10vmin, 6rem);
+}
+
+.heading span {
+  display: block;
+  text-transform: uppercase;
+}
+
+.heading span.filled {
+  color: var(--text-color);
+}
+
+.heading span:not(.filled) {
+  --stroke: min(0.25vmin, 2px) var(--text-color);
+  color: var(--bg-color);
+  -webkit-text-stroke: var(--stroke);
+  text-stroke: var(--stroke);
+}
+
+.subheading {
+  position: relative;
+  margin-block-start: 1rem;
+  margin-inline-start: auto;
+  font-size: 0.428em;
+  color: var(--text-color);
+}
