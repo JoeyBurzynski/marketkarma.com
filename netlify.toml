@@ -48,6 +48,13 @@
   headers = {X-From = "Netlify"}
 
 [[redirects]]
+  from = "/mavis-onboarding"
+  to = "https://nudge.us/mavis-onboard"
+  status = 200
+  force = false
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
   from = "/sample-301"
   to = "/"
   status = 301
