@@ -6,10 +6,9 @@
   "main": "index.js",
   "workspaces": [],
   "engines": {
-    "node": "16.5.0"
+    "node": "18.17.1"
   },
   "scripts": {
-    "netlify:deploy": "DEBUG=* netlify build",
     "netlify:deploy": "DEBUG=* netlify deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,6 +28,7 @@
     "netlify-plugin-image-optim": "^0.4.0",
     "netlify-plugin-inline-source": "^1.0.4",
     "netlify-plugin-minify-html": "^0.3.1",
-    "netlify-plugin-subfont": "^6.0.0"
+    "netlify-plugin-subfont": "^6.0.0",
+    "prettier": "3.0.3"
   }
 }

@@ -6,7 +6,9 @@
 
 html,
 body {
+  overflow: hidden;
   height: 100%;
+  margin: 0;
 }
 
 body {
@@ -71,7 +73,7 @@ body::before {
   --stroke: min(0.25vmin, 2px) var(--text-color);
   color: var(--bg-color);
   -webkit-text-stroke: var(--stroke);
-  text-stroke: var(--stroke);
+  text-shadow: var(--stroke);
 }
 
 .subheading {
@@ -80,4 +82,28 @@ body::before {
   margin-inline-start: auto;
   font-size: 0.428em;
   color: var(--text-color);
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  body::before {
+    --size: 200vmax;
+  }
+
+  .text {
+    font-size: 2rem;
+  }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text {
+    font-size: 3.5rem;
+  }
 }
