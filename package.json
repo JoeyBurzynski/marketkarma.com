@@ -6,7 +6,7 @@
   "main": "index.js",
   "workspaces": [],
   "engines": {
-    "node": "18.17.1"
+    "node": "22.23.2"
   },
   "scripts": {
     "netlify:deploy": "DEBUG=* netlify deploy",
